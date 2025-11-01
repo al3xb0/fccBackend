@@ -50,9 +50,14 @@ router.post('/:_id/exercises', async (req, res) => {
       return res.status(400).json({ error: 'duration must be a number' });
     }
 
-    let d = date ? new Date(date) : new Date();
-    if (isNaN(d.getTime())) {
-      return res.status(400).json({ error: 'Invalid date' });
+    let d;
+    if (date && String(date).trim()) {
+      d = new Date(date);
+      if (isNaN(d.getTime())) {
+        return res.status(400).json({ error: 'Invalid date' });
+      }
+    } else {
+      d = new Date();
     }
 
     const ex = await Exercise.create({
