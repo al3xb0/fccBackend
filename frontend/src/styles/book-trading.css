@@ -1,0 +1,100 @@
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0;
+    border-bottom: 1px solid #e2e8f0
+}
+
+.tab {
+    background: transparent;
+    border: 0;
+    padding: 10px 14px;
+    cursor: pointer;
+    color: #64748b;
+    font-weight: 500;
+    border-bottom: 2px solid transparent
+}
+
+.tab:hover {
+    color: #0f172a
+}
+
+.tab.active {
+    color: #4f46e5;
+    border-bottom-color: #4f46e5
+}
+
+.books-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+    display: grid;
+    gap: 10px
+}
+
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px;
+    background: #fff
+}
+
+.book-title {
+    font-weight: 600;
+    margin-bottom: 4px
+}
+
+.book-meta {
+    color: #64748b;
+    font-size: .9rem
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin-top: 12px
+}
+
+.settings-form label {
+    font-size: .9rem;
+    color: #475569;
+    font-weight: 500
+}
+
+.trades-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+    display: grid;
+    gap: 10px
+}
+
+.trade-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px;
+    background: #fff
+}
+
+.trade-title {
+    font-weight: 600;
+    margin-bottom: 4px
+}
+
+.trade-meta {
+    color: #64748b;
+    font-size: .9rem
+}
+
+.trade-actions {
+    display: flex;
+    gap: 8px
+}

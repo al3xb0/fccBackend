@@ -1,0 +1,22 @@
+{
+  "name": "nightlife-service",
+  "version": "1.0.0",
+  "description": "Nightlife Coordination App backend (Yelp search + going tracking)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^8.6.0",
+    "connect-mongo": "^5.1.0",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

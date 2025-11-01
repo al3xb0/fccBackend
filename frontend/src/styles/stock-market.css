@@ -1,0 +1,47 @@
+.stocks-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0
+}
+
+.stock-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #eef2ff;
+    color: #3730a3;
+    border: 1px solid #c7d2fe;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: .9rem;
+    font-weight: 500
+}
+
+.remove-btn {
+    background: transparent;
+    border: 0;
+    color: #dc2626;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.remove-btn:hover {
+    color: #991b1b
+}
+
+.chart-container {
+    margin-top: 16px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px
+}

@@ -1,0 +1,163 @@
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    padding: 24px;
+    background: #f6f8fa;
+}
+
+.app {
+    max-width: 720px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0
+}
+
+.brand {
+    font-weight: 600
+}
+
+.nav-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 8px
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background: #edf2f7;
+    cursor: pointer
+}
+
+.btn:hover {
+    filter: brightness(0.98)
+}
+
+.btn.primary {
+    background: linear-gradient(180deg, #4f46e5, #4338ca);
+    color: white;
+    border-color: transparent
+}
+
+.btn.secondary {
+    background: #fff;
+    border: 1px solid #cbd5e1
+}
+
+.main-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(12, 15, 20, 0.04)
+}
+
+.page {
+    padding: 8px
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 12px
+}
+
+input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0
+}
+
+button {
+    padding: 8px 10px
+}
+
+.result {
+    background: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 12px
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px
+}
+
+.service-card {
+    padding: 12px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ffffff, #fbfdff);
+    border: 1px solid #e6eef8
+}
+
+.btn.full {
+    display: block;
+    width: 100%;
+}
+
+.btn.full.primary {
+    font-size: 1.05rem;
+    padding: 12px 14px
+}
+
+.service-grid.single-col {
+    grid-template-columns: 1fr
+}
+
+.result pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 0;
+}
+
+.result {
+    overflow-wrap: anywhere;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    padding: 24px;
+    background: #f6f8fa;
+}
+
+.app {
+    max-width: 720px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px
+}
+
+input {
+    flex: 1;
+    padding: 8px 10px
+}
+
+button {
+    padding: 8px 10px
+}
+
+.result {
+    background: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px
+}

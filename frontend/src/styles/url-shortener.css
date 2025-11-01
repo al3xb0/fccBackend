@@ -1,0 +1,42 @@
+.url-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+input.full {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.url-display {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.url-text {
+  background: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  word-break: break-all;
+  margin-top: 4px;
+}
+
+.result.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.result.success {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.hint {
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin-top: 8px;
+}

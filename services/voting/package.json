@@ -1,0 +1,22 @@
+{
+  "name": "voting-service",
+  "version": "1.0.0",
+  "description": "Voting app backend for FCC project (polls, voting, simple session auth)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^8.6.0",
+    "connect-mongo": "^5.1.0",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
