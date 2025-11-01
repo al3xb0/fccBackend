@@ -14,6 +14,7 @@ This repository hosts a set of freeCodeCamp-style microservices and a React/Vite
 - Stock Market: http://localhost:3007
 - Book Trading: http://localhost:3008
 - Pinterest: http://localhost:3009
+- Exercise Tracker: http://localhost:3010
 - Frontend (Vite dev server): http://localhost:5173
 
 ### Prerequisites
@@ -54,6 +55,7 @@ VITE_NIGHTLIFE_API=http://localhost:3006
 VITE_STOCK_MARKET_API=http://localhost:3007
 VITE_BOOK_TRADING_API=http://localhost:3008
 VITE_PINTEREST_API=http://localhost:3009
+  VITE_EXERCISE_TRACKER_API=http://localhost:3010
 ```
 
 ### Notes

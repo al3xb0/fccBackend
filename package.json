@@ -4,7 +4,7 @@
   "private": true,
   "description": "Monorepo to run FCC-style microservices and a React/Vite frontend together",
   "scripts": {
-    "install:all": "npm --prefix services/timestamp install; npm --prefix services/request-header install; npm --prefix services/url-shortener install; npm --prefix services/image-search install; npm --prefix services/file-metadata install; npm --prefix services/voting install; npm --prefix services/nightlife install; npm --prefix services/stock-market install; npm --prefix services/book-trading install; npm --prefix services/pinterest install; npm --prefix frontend install",
+  "install:all": "npm --prefix services/timestamp install; npm --prefix services/request-header install; npm --prefix services/url-shortener install; npm --prefix services/image-search install; npm --prefix services/file-metadata install; npm --prefix services/voting install; npm --prefix services/nightlife install; npm --prefix services/stock-market install; npm --prefix services/book-trading install; npm --prefix services/pinterest install; npm --prefix services/exercise-tracker install; npm --prefix frontend install",
     "start:timestamp": "npm run --prefix services/timestamp start",
     "start:request-header": "npm run --prefix services/request-header start",
     "start:url-shortener": "npm run --prefix services/url-shortener start",
@@ -16,7 +16,8 @@
     "start:book-trading": "npm run --prefix services/book-trading start",
     "start:pinterest": "npm run --prefix services/pinterest start",
     "start:frontend": "npm run --prefix frontend dev",
-    "start:backend": "concurrently -n \"timestamp,request-header,url-shortener,image-search,file-metadata,voting,nightlife,stock-market,book-trading,pinterest\" -c \"magenta,cyan,green,blue,white,yellow,red,gray,brightBlue,brightMagenta\" \"npm run --prefix services/timestamp start\" \"npm run --prefix services/request-header start\" \"npm run --prefix services/url-shortener start\" \"npm run --prefix services/image-search start\" \"npm run --prefix services/file-metadata start\" \"npm run --prefix services/voting start\" \"npm run --prefix services/nightlife start\" \"npm run --prefix services/stock-market start\" \"npm run --prefix services/book-trading start\" \"npm run --prefix services/pinterest start\"",
+  "start:backend": "concurrently -n \"timestamp,request-header,url-shortener,image-search,file-metadata,voting,nightlife,stock-market,book-trading,pinterest,exercise\" -c \"magenta,cyan,green,blue,white,yellow,red,gray,brightBlue,brightMagenta,brightCyan\" \"npm run --prefix services/timestamp start\" \"npm run --prefix services/request-header start\" \"npm run --prefix services/url-shortener start\" \"npm run --prefix services/image-search start\" \"npm run --prefix services/file-metadata start\" \"npm run --prefix services/voting start\" \"npm run --prefix services/nightlife start\" \"npm run --prefix services/stock-market start\" \"npm run --prefix services/book-trading start\" \"npm run --prefix services/pinterest start\" \"npm run --prefix services/exercise-tracker start\"",
+  "start:exercise-tracker": "npm run --prefix services/exercise-tracker start",
     "start:all": "concurrently -n \"backend,frontend\" -c \"brightBlue,brightGreen\" \"npm run start:backend\" \"npm run start:frontend\""
   },
   "devDependencies": {

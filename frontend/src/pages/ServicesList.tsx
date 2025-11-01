@@ -87,6 +87,14 @@ export default function ServicesList() {
             <button className="btn primary full" onClick={() => nav('/services/pinterest')}>Open</button>
           </div>
         </div>
+
+        <div className="service-card">
+          <h3>Exercise Tracker</h3>
+          <p>Create users, add exercises, and view filtered logs (from/to/limit) with toDateString formatted dates.</p>
+          <div style={{ marginTop: 8 }}>
+            <button className="btn primary full" onClick={() => nav('/services/exercise-tracker')}>Open</button>
+          </div>
+        </div>
       </div>
     </div>
   )

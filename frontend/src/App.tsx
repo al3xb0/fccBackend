@@ -12,6 +12,7 @@ import ServiceFileMetadata from './pages/ServiceFileMetadata'
 import ServiceStockMarket from './pages/ServiceStockMarket'
 import ServiceBookTrading from './pages/ServiceBookTrading'
 import ServicePinterest from './pages/ServicePinterest'
+import ServiceExerciseTracker from './pages/ServiceExerciseTracker'
 
 export default function App() {
   const nav = useNavigate()
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/services/stock-market" element={<ServiceStockMarket />} />
           <Route path="/services/book-trading" element={<ServiceBookTrading />} />
           <Route path="/services/pinterest" element={<ServicePinterest />} />
+          <Route path="/services/exercise-tracker" element={<ServiceExerciseTracker />} />
         </Routes>
       </main>
     </div>
