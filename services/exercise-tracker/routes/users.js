@@ -4,11 +4,6 @@ const Exercise = require('../models/Exercise');
 
 const router = express.Router();
 
-// Helper to format date as toDateString
-function toDateString(d) {
-  return new Date(d).toDateString();
-}
-
 // POST /api/users - create user
 router.post('/', async (req, res) => {
   try {
@@ -71,7 +66,7 @@ router.post('/:_id/exercises', async (req, res) => {
       username: user.username,
       description: ex.description,
       duration: ex.duration,
-      date: toDateString(ex.date),
+      date: new Date(ex.date).toDateString(),
       _id: user._id
     });
   } catch (err) {
@@ -121,7 +116,7 @@ router.get('/:_id/logs', async (req, res) => {
     const log = items.map(x => ({
       description: x.description,
       duration: x.duration,
-      date: toDateString(x.date)
+      date: new Date(x.date).toDateString()
     }));
 
     res.json({
