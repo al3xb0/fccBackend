@@ -50,14 +50,12 @@ router.post('/:_id/exercises', async (req, res) => {
       return res.status(400).json({ error: 'duration must be a number' });
     }
 
-    let d;
-    if (date && String(date).trim()) {
-      d = new Date(date);
-      if (isNaN(d.getTime())) {
-        return res.status(400).json({ error: 'Invalid date' });
+    let d = new Date();
+    if (date !== undefined && date !== null && String(date).trim() !== '') {
+      const parsedDate = new Date(date);
+      if (!isNaN(parsedDate.getTime()) && isFinite(parsedDate.getTime())) {
+        d = parsedDate;
       }
-    } else {
-      d = new Date();
     }
 
     const ex = await Exercise.create({
@@ -80,7 +78,6 @@ router.post('/:_id/exercises', async (req, res) => {
   }
 });
 
-// GET /api/users/:_id/logs - fetch logs with filters
 router.get('/:_id/logs', async (req, res) => {
   try {
     const { _id } = req.params;
